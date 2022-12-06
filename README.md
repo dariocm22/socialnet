@@ -1,5 +1,8 @@
 # socialnet
 
+Esta página fue desarrollada con Vue.js y Bootstrap v5.0, intentando clonar una página de una red social, pero esta es totalmente personalizada.
+Fue un poco tedioso su realización, ya que se tiene que tener mucho cuidado para no equivocarse y que no falte nada en el código, pero es muy satisfactorio observar cómo funciona toda esta parte de front-end.
+
 ## Comandos utilizados
 ```
 npm install
