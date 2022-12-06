@@ -1,22 +1,20 @@
 # socialnet
 
-## Project setup
+## Comandos utilizados
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
 ```
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Video demostración de funcionamiento
+https://user-images.githubusercontent.com/70908270/205960150-76980f50-fd28-4d63-8791-6ab007ca1d18.mp4
 
 ### Vista general de la página:
 ![image](https://user-images.githubusercontent.com/70908270/205943144-cb33bcc3-d825-4597-afec-bd84cb20801c.png)
