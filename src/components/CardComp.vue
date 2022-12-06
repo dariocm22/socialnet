@@ -1,22 +1,30 @@
 <template>
 <div class="card">
+    <CardHeader v-if="header" :header="header" />
             <div class="card-body">
               <h5 v-if="title" class="card-title">{{ title }}</h5>
               <p v-if="parrafo" class="card-text">
                 {{ parrafo }}
               </p>
-              <slot></slot>
+              <img v-if="picture" :src="picture" alt="post img" />
+              <ListGroup v-if="likes" />
+              <slot name="default"></slot>
               <div class="d-grid gap-3">
-                  <button v-for="btn in btns" :key="btn.txt" class="btn" :class="btn.class">{{btn.txt}}</button>
+                  <button v-for="btn in btns" :key="btn.txt" class="btn" :class="btn.class">{{btn.txt}}
+                  </button>
+              <slot name="footer"></slot>
               </div>
             </div>
           </div>
 </template>
 
 <script>
+    import CardHeader from './CardHeader.vue';
+    import ListGroup from './ListGroup.vue';
     export default{
+        components: { CardHeader, ListGroup },
         name: 'CardComp',
-        props: ['title', 'parrafo', 'btns']
+        props: ['title', 'parrafo', 'btns', 'picture', 'header', 'likes']
     }
 </script>
 
@@ -25,5 +33,7 @@
         border: none;
         box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     }
-
+    .card img {
+      max-width: 100%;
+    }
 </style>

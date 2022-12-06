@@ -6,3 +6,15 @@
   .nav-link{
     padding: 0.2rem 1rem;
   }
+
+  .form-control {
+    line-height: 2;
+  }
+
+  .btn {
+    line-height: 1.8;
+  }
+
+  a{
+    text-decoration: none;
+  }
